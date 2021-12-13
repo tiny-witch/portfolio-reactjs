@@ -6,9 +6,7 @@ function Home(){
     return(
         
         <div>
-            {/* <div className="bg-image"></div> */}
-            {/* <h1>Sarah -----</h1>
-            <h1>Creative Technoologist. Bot hunter.</h1> */}
+
             <div className="bg-image"></div>
 
 <div className="bg-text">
