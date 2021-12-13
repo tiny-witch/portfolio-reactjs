@@ -2,48 +2,35 @@
 /* Some General Styling  */
 * {
   box-sizing: border-box;
+  
 }
 body{
-  /* background-size: cover; */
-  background-color: rgb(85, 85, 85);
-  /* background-image: url("../dogecoin_2.png"); */
+  background-size: cover;
+  background-color: rgb(255, 227, 227);
+  /* background-image: url("/Users/janajasa/Documents/react-multi-pg/testcase1/src/Pages/dogecoin_2.png"); */
   /* The width is 60%, by default */
 
 }
+.hide {
+  display: none;
+}
+.items:hover > .hide {
+  display: block;
+  color: red;
+}
+h1{
+  color: #ffffff;
+  font-family: 'Prata';
+
+}
+
+
 .home {
+  font-family: 'Prata';
   transition: 0.5s;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0)   60%, rgb(0, 0, 0,0));
   padding: 20px;
   color: white;
-  float: left;
-  width: 25%; /* The width is 25%, by default */
-}
-
-.projects {
-  transition: 0.5s;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0)   60%, rgb(0, 0, 0,0));
-  padding: 20px;
-  color: white;
-
-  float: left;
-  width: 25%; /* The width is 60%, by default */
-}
-
-.resources {
-  transition: 0.5s;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0)   60%, rgb(0, 0, 0,0));
-  padding: 20px;
-  color: white;
-
-  float: left;
-  width: 25%;  /* The width is 25%, by default */
-}
-.contact {
-  transition: 0.5s;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0)   60%, rgb(0, 0, 0,0));
-  padding: 20px;
-  color: white;
-
   float: left;
   width: 25%; /* The width is 25%, by default */
 }
@@ -57,10 +44,21 @@ body{
   transition: 0.5s;
   border-radius: 15px;
   background-size: cover;
-
-
-  
 } 
+.bg-image {
+  /* The image used */
+  background-image: 'url("/Users/janajasa/Documents/react-multi-pg/testcase1/src/Pages/dogecoin_2.png")';
+  background-color: #d35757;
+  color:aqua;
+
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+
+
+}
 
 .resource_items{
   margin: 1vw;
@@ -68,53 +66,23 @@ body{
   text-align: center;
   width: calc(80vw);
   height: calc(76vw / 2);
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgba(124, 124, 124);
   
 }
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }
 
 button {
   display: inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   border-radius: 30px;
-  margin: .20rem;
+  /* margin: .20rem; */
   font-size: 1rem;
   color: #666666;
   background: #ffffff;
@@ -130,81 +98,36 @@ button:hover {
   /* change on hover */
   background-color: rgba(255, 255, 255, 0.95);
   transform: scale(1.05);
+
 }
 .contact:hover, .home:hover, .projects:hover, .resources:hover {
       /* border: 1px solid red; */
       text-decoration: underline;
 }
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 800px) {
-  .contact, .home, .projects, .resources {
-    width: 100%; 
-    color: white;
-    background-color: black;
-    /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  .resource_items{
-      width: calc(80vw );
-      height: calc(76vw / 2);
-      color: rgb(221, 221, 221);
-      background-color: rgb(83, 83, 83);
-  }
+@media all and (max-width:600px){
   .items{
-      width: calc(76vw / 2);
-      height: calc(76vw / 2);
-      background-color: rgb(0, 0, 0);
-  }
-}
-/* @media all and (max-width:799px) and (orientation: landscape){
-  body{
-      background-color: rgb(89, 58, 167);
-  }
+    margin-bottom: 5vw;
+    width: 78vw;
+    height:100vw;
 
-  .items{
-      width: calc(76vw / 2);
-      height: calc(76vw / 2);
       background-color: rgb(240, 240, 240);
   }
+  .center {
+    margin: auto;
+    width: 20vw;
+    height:20vw;
+    /* border: 3px solid green; */
+    padding: 10px;
+  }
+  .center  .button {
+    margin: 0;
+    font-size: 210vw;
+    /* margin-left: 20vw; */
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
 
-}
-@media all and (min-width:800px) and (max-width: 1200px){
-    body{
-        background-color: gold;
-    }
+  }
 
-    .items{
-        width: calc(76vw / 2);
-        height: calc(76vw / 2);
-        background-color: rgb(240, 240, 240);
-    }
-
-}
-
-
-
-@media all and (min-width:1201px){
-    body{
-        background-color: purple;
-    }
-
-    .items{
-        width: calc(74vw / 3);
-        height: calc(74vw / 3);
-        background-color: lightblue;
-    }
-
-}
-
-
-@media all and (max-width:799px) and (orientation: landscape){
-    body{
-        background-color: rgb(89, 58, 167);
-    }
-
-    .items{
-        width: calc(76vw / 2);
-        height: calc(76vw / 2);
-        background-color: rgb(240, 240, 240);
-    }
-
-} */
+} 

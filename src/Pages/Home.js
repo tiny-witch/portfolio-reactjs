@@ -6,7 +6,15 @@ function Home(){
     return(
         
         <div>
-            <h1>Home! Welcome.</h1>
+            {/* <div className="bg-image"></div> */}
+            {/* <h1>Sarah -----</h1>
+            <h1>Creative Technoologist. Bot hunter.</h1> */}
+            <div className="bg-image"></div>
+
+<div className="bg-text">
+  <h1>I am John Doe</h1>
+  <p>And I'm a Photographer</p>
+</div>
         </div>
     )
 }
