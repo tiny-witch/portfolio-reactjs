@@ -11,8 +11,8 @@
 - styling on Home Page
 
 # To do:
-- create a responsive, collapsabile nav
-- add iimages corresponding to projects
+- create a collapsabile nav for mobile
+- add images corresponding to projects
 - add link on click to project butttons
 - add to about section, it's blank now. Sad.
 - add dynamic background- d3js code of network graph for non-mobile, image with animatioon for mobile
