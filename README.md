@@ -1,3 +1,23 @@
+# Done:
+- Link Routing
+- Main header nav
+- filter  by language for projects 
+- filter buttons responsive and induvidual projects have buttons 
+- filter by "all" on default
+- projects have image, title, tag and description data
+- description data apears on hover
+-  Implement FadeIn
+- implement some styling on titles
+- styling on Home Page
+
+# To do:
+- create a responsive, collapsabile nav
+- add iimages corresponding to projects
+- add link on click to project butttons
+- add to about section, it's blank now. Sad.
+- add dynamic background- d3js code of network graph for non-mobile, image with animatioon for mobile
+- clean up styling
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
