@@ -1,5 +1,6 @@
 // import React from 'react'
 import React, { useState } from "react";
+import Fade from "react-reveal/Fade"
 function Projects(){
           // Modify the DOM Styles with JavaScript
   // document.body.style.backgroundColor = "blue";
@@ -43,9 +44,12 @@ const [hoverVisible, setVisible] = useState(0);
 
     return(
         <div>
-          <div className="bg-image"></div>
-            <h1>Projects! Welcome.</h1>
-            <p>You clicked {count} times</p>
+          <Fade bottom>
+          
+            <div  className="proj-title">Projects</div>
+            <p>Currently viewing {count} projects</p>
+            </Fade>
+            
             <div className="center">
            
             <button onClick={() => setCount('Python')}>Python</button>

@@ -2,15 +2,42 @@
 /* Some General Styling  */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   
 }
 body{
-  background-size: cover;
+  /* background-size: cover; */
   /* background-color: rgb(255, 227, 227); */
   background-image: url("/Users/janajasa/Documents/react-multi-pg/testcase1/src/Pages/dogecoin_2.png");
   /* The width is 60%, by default */
 
 }
+.social-container{
+  background-color: thistle;
+
+}
+.social-icons{
+  background-color: thistle;
+  left:50%;
+  width:20vw;
+  /* align-items: center; */
+  display: inline-block;
+  /* vertical-align: middle; */
+  border-radius: 30px;
+  padding: 0.2rem;
+  font-size: 1rem;
+  color: #666666;
+  background: #ffffff;
+  border: 1px solid #666666;
+  align-items: center;
+}
+.social-icons:hover{
+  border: 1px solid #666666;
+  background: #666666;
+  color: #ffffff;
+}
+
 .hide {
   display: none;
 }
@@ -18,9 +45,43 @@ body{
   display: block;
   color: red;
 }
-h1{
-  color: #ffffff;
+.proj-title{
 
+  /* margin: auto; */
+margin:0;
+padding:0;
+  /* border: 3px solid green; */
+  position: relative;
+  top: 50px;
+  height:25vh;
+  /* left: 50%; */
+  color:white;
+  text-align: center;
+  font-size: 50px;
+
+
+}
+p{
+  color:white;
+  text-align: center;
+  /* position: relative;
+  top: 50px; */
+
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
 
 
@@ -58,7 +119,7 @@ h1{
 .center {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  /* border: 3px solid rgb(255, 154, 23); */
   padding: 10px;
 }
 
@@ -66,11 +127,12 @@ button {
   display: inline-block;
   /* vertical-align: middle; */
   border-radius: 30px;
-  /* margin: .20rem; */
+  padding: 0.2rem;
   font-size: 1rem;
   color: #666666;
   background: #ffffff;
   border: 1px solid #666666;
+  align-items: center;
 }
 
 button:hover {
