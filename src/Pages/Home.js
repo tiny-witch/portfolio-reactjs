@@ -10,9 +10,6 @@ function Home(){
 
 
             {/* <div className="bg-image"></div> */}
-
-            
-
 <div className="bg-text">
 <Fade top>
   <h1>Sarah ----</h1>

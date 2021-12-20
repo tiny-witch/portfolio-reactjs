@@ -7,8 +7,8 @@
   
 }
 body{
-  /* background-size: cover; */
-  /* background-color: rgb(255, 227, 227); */
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
   background-image: url("/Users/janajasa/Documents/react-multi-pg/testcase1/src/Pages/dogecoin_2.png");
   /* The width is 60%, by default */
 
@@ -19,17 +19,19 @@ body{
 }
 .social-icons{
   background-color: thistle;
-  left:50%;
-  width:20vw;
-  /* align-items: center; */
-  display: inline-block;
-  /* vertical-align: middle; */
-  border-radius: 30px;
-  padding: 0.2rem;
+  position: absolute;
+left:45vw;
+  width:10vw;
+  /* height:20vh; */
+  align-items: center;
+display: inline-block; 
+vertical-align: middle;
+ border-radius: 30px;
+padding: 0.2rem;
   font-size: 1rem;
   color: #666666;
   background: #ffffff;
-  border: 1px solid #666666;
+  border: 1px solid #666666; 
   align-items: center;
 }
 .social-icons:hover{
@@ -48,8 +50,9 @@ body{
 .proj-title{
 
   /* margin: auto; */
+
 margin:0;
-padding:0;
+/* padding:0;
   /* border: 3px solid green; */
   position: relative;
   top: 50px;
@@ -62,10 +65,17 @@ padding:0;
 
 }
 p{
+  left: 10vw;
+  right:10vw;
+width: 80vw;
+ /* margin-top: 10vh; */
+  display: flex;
   color:white;
   text-align: center;
-  /* position: relative;
-  top: 50px; */
+  position: relative;
+  top: 50px;
+  font-size: 1rem;
+  /* line-height: 20px; */
 
 }
 .bg-text {
@@ -95,6 +105,7 @@ p{
 }
 .items{
   margin: 1vw;
+  /* margin-left: vw; */
   float: left;
   text-align: center;
   width: calc(76vw / 2);
@@ -119,12 +130,20 @@ p{
 .center {
   margin: auto;
   width: 50%;
-  /* border: 3px solid rgb(255, 154, 23); */
   padding: 10px;
+}
+.proj-button-center {
+  margin: auto;
+  align-items: center;
+
+
+  padding-bottom: 5vh;
+  padding-left: 42vw;
+
 }
 
 button {
-  display: inline-block;
+  /* display: inline-block; */
   /* vertical-align: middle; */
   border-radius: 30px;
   padding: 0.2rem;
@@ -132,7 +151,7 @@ button {
   color: #666666;
   background: #ffffff;
   border: 1px solid #666666;
-  align-items: center;
+  /* align-items: center; */
 }
 
 button:hover {
@@ -143,7 +162,7 @@ button:hover {
 .items:hover{
   /* change on hover */
   background-color: rgba(255, 255, 255, 0.95);
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 
 }
 .contact:hover, .home:hover, .projects:hover, .resources:hover {
@@ -153,7 +172,8 @@ button:hover {
 @media all and (max-width:600px){
   .items{
     margin-bottom: 5vw;
-    width: 78vw;
+    margin-left: 10vw;
+    width: 80vw;
     height:100vw;
 
       background-color: rgb(240, 240, 240);
